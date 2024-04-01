@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-bs-theme="dark"
+      lang="en"
+>
 <head>
     <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1"
+    <meta content="width=device-width, initial-scale=1, shrink-to-fit=no"
           name="viewport"
     >
     <title>Jonathan Stechmann's Website</title>
-    <link href="src/style.css"
-          rel="stylesheet"
-    >
 
 
     <link href="/apple-touch-icon.png"
@@ -45,42 +44,59 @@
     <meta content="Jonathan Stechmann's personal website"
           name="description"
     >
-
+    <script src="src/main.ts"
+            type="module"
+    ></script>
 </head>
 <body>
 <header>
-    <nav aria-label="main navigation"
-         class="navbar"
-         role="navigation"
-    >
-        <div class="navbar-menu">
-            <a class="navbar-item"
-               href="/"
-            >
-                Home
-            </a>
-            <a class="navbar-item"
-               href="https://github.com/BlizzardWizzard"
-            >
-                GitHub
-            </a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark-subtle sticky-top">
+        <button aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+                class="navbar-toggler"
+                data-target="#navbarSupportedContent"
+                data-toggle="collapse"
+                type="button"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse"
+             id="navbarSupportedContent"
+        >
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link"
+                       href="#"
+                    >Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="https://github.com/BlizzardWizzard"
+                    >GitHub</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link"
+                       href="https://www.linkedin.com/in/jonathan-stechmann-b16192270"
+                    >LinkedIn</a>
+                </li>
+            </ul>
         </div>
     </nav>
 </header>
 <main>
-    <div class="row">
-        <div class="col-1-3">
-            <figure class="teaser-img">
-                <img alt="Photograph of Jonathan Stechmann in a dark blue suit and peach polo shirt."
-                     decoding="async"
-                     height="960"
-                     loading="eager"
-                     src="/Bewerbungsfoto_skaliert_klein.webp"
-                     width="636"
-                >
-            </figure>
+    <div class="container">
+        <div class="col-1-2">
+            <img alt="Photograph of Jonathan Stechmann in a dark blue suit and peach polo shirt."
+                 class="img-fluid"
+                 decoding="async"
+                 loading="eager"
+                 src="/Bewerbungsfoto_skaliert_klein.webp"
+            >
         </div>
-        <div class="col-2-3">
+        <div class="col-1-2">
+            <div class="text-wrap"></div>
             <h1>Jonathan Stechmann</h1>
             <p>Experienced IT specialist for application development with 5 years of experience in web development and content management systems.</p>
             <p>Main developer in projects such as the career portal of the Free State of Thuringia, the website of the Erfurt Theater, and the Thuringian State
@@ -89,30 +105,6 @@
     </div>
 </main>
 <footer>
-    <div>
-        <a aria-label="Visit Jonathan Stechmann's LinkedIn profile"
-           class="linkedin-button"
-           href="https://www.linkedin.com/in/jonathan-stechmann-b16192270"
-           rel="noopener noreferrer"
-           target="_blank"
-        >
-            <img alt="LinkedIn Logo"
-                 height="256"
-                 src="/In-White-128@2x.png"
-                 width="256"
-            />
-        </a>
-        <a aria-label="Visit Jonathan Stechmann's GitHub profile"
-           class="github-button"
-           href="https://github.com/BlizzardWizzard"
-           rel="noopener noreferrer"
-           target="_blank"
-        >
-            <img alt="GitHub Logo"
-                 src="/github-mark-white.svg"
-            >
-        </a>
-    </div>
     <div>
         <p>
             © Jonathan Stechmann.

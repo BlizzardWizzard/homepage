@@ -11,9 +11,10 @@
   "devDependencies": {
     "typescript": "^5.0.2",
     "vite": "^4.5.2",
-    "@types/swiper": "^6.0.0"
+    "sass": "^1.72.0"
   },
   "dependencies": {
-    "swiper": "^10.2.0"
+    "bootstrap": "^5.3.3",
+    "@popperjs/core": "^2.11.8"
   }
 }
